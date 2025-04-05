@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box active" id="register-box">
+            <h2>Register</h2>
+            <input type="text" id="register-name" placeholder="Enter your name">
+            <input type="email" id="register-email" placeholder="Enter your email">
+            <input type="password" id="register-password" placeholder="Enter your password">
+            <button onclick="register()">Register</button>
+            <p>Already have an account? <a onclick="toggleForm('login')">Login</a></p>
+        </div>
+        <div class="form-box" id="login-box">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="username">
+            <input type="password" id="login-password" placeholder="Enter your password">
+            <button onclick="login()">Login</button>
+            <p>Need an account? <a onclick="toggleForm('register')">Register</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

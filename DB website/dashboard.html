@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Dashboard</title>
+    <link rel="stylesheet" href="styleA.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Notes Dashboard</h2>
+            <ul id="notes-list"></ul>
+            <button id="add-note">+ Add Note</button>
+            <button onclick="logout()" class="logout">Logout</button>
+
+        </aside>
+        <main class="content">
+            <h2 id="note-title">Select a Note</h2>
+            <textarea id="note-content" placeholder="Start typing..."></textarea>
+            <div class="actions">
+                <button id="delete-note" class="delete">Delete</button>
+                <button id="update-note" class="update">Update</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
