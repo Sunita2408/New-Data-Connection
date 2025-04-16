@@ -24,7 +24,7 @@ function register() {
         };
 
         // Call the API using fetch
-        fetch('http://192.168.0.107:8080/auth/register', {
+        fetch('http://192.168.0.131:8080/auth/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ function login() {
         };
 
         // Call the API using fetch
-        fetch('http://192.168.0.107:8080/auth/login', {  // Correct URL
+        fetch('http://192.168.0.131:8080/auth/login', {  // Correct URL
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
